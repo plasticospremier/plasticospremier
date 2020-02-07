@@ -384,3 +384,32 @@
 
 })(jQuery);
 
+$('.whatsapp-btn').on('click', function() {
+    let whatsString = "Hola, me gustaría obtener más información de los productos";
+
+    let start_url = "";
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        start_url = "https://wa.me/+527717934824?text=";
+
+    } else {
+        start_url = "https://web.whatsapp.com/send?phone=+527717934824&text=";
+    }
+
+    window.open(start_url + whatsString, '_blank');
+    event.preventDefault();
+});
+
+$('.form-whatsapp-btn').on('click', function() {
+	let whatsString = `Me pongo en contacto con ustedes, mis datos son:%0A%0A*Nombre:* ${$("#nombre").val()}%0A*Teléfono:* ${$("#telefono").val()}%0A*Correo:* ${$("#correo").val()}%0A*Asunto:* ${$("#asunto").val()}%0A*Mensaje:* ${$("#mensaje").val()}`;
+
+    let start_url = "";
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        start_url = "https://wa.me/+527717934824?text=";
+
+    } else {
+        start_url = "https://web.whatsapp.com/send?phone=+527717934824&text=";
+    }
+
+    window.open(start_url + whatsString, '_blank');
+    event.preventDefault();
+});
