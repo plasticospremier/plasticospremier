@@ -1,3 +1,9 @@
+/*!
+ * Bootstrap v4.2.1 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -8693,7 +8699,7 @@ h1, h2, h3, h4, h5,
         display: none; } }
 
 .form-control {
-  height: 29px !important;
+  height: 52px !important;
   background: #fff !important;
   color: #000000 !important;
   font-size: 18px;
@@ -9533,51 +9539,6 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
-textarea {
-  resize: none;
-}
-.form-label {
-  font-size: 12px;
-  color: #008145;
-  margin: 0;
-  display: block;
-  opacity: 1;
-  -webkit-transition: .333s ease top, .333s ease opacity;
-  transition: .333s ease top, .333s ease opacity;
-}
-.form-control {
-  border-radius: 0;
-  border-color: #ccc;
-    border-width: 0 0 2px 0;
-    border-style: none none solid none;
-    box-shadow: none;
-}
-.form-control:focus {
-  box-shadow: none;
-  border-color: #008145;
-}
-.js-hide-label {
-  opacity: 0;   
-}
-.js-unhighlight-label {
-  color: #999 
-}
-.btn-start-order {
-  background: 0 0 #ffffff;
-    border: 1px solid #008145;
-    border-radius: 3px;
-    color: #008145;
-    font-family: "Raleway", sans-serif;
-    font-size: 18px;
-    line-height: inherit;
-    margin: 30px 0;
-    padding: 10px 50px;
-    transition: all 0.25s ease 0s;
-}
-.btn-start-order:hover,.btn-start-order:active, .btn-start-order:focus {
-  border-color: #008145;
-  color: #008145;
-}
-.hidden{
-  display: none;
-}
+/*li.active{
+      text-decoration: underline;
+}*/
