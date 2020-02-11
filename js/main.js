@@ -413,10 +413,3 @@ $('.form-whatsapp-btn').on('click', function() {
     window.open(start_url + whatsString, '_blank');
     event.preventDefault();
 });
-$('.form-gmail-btn').on('click', function() {
-	let mailString = `Me pongo en contacto con ustedes, mis datos son:%0A%0A*Nombre:* ${$("#nombre").val()}%0A*Teléfono:* ${$("#telefono").val()}%0A*Correo:* ${$("#correo").val()}%0A*Asunto:* ${$("#asunto").val()}%0A*Mensaje:* ${$("#mensaje").val()}`;
-    let start_url = "mailto:plasticospremier@hotmail.com?subject="+mailString;
-
-    window.open(start_url, '_blank');
-    event.preventDefault();
-});

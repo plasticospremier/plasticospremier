@@ -24,6 +24,11 @@
     <link rel="stylesheet" href="../css/flaticon.css">
     <link rel="stylesheet" href="../css/icomoon.css">
     <link rel="stylesheet" href="../css/style.css">
+    <style media="screen">
+        table {
+          margin: 0 auto; /* or margin: 0 auto 0 auto */
+        }
+    </style>
   </head>
   <body>
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
@@ -137,9 +142,12 @@
 								<span class="position mb-2">Burbuja</span>
 								<h3 class="mb-4">Detalles</h3>
 								<div class="faded">
-									<p>Descripción del productoLorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, eos illum optio esse accusantium rem atquei eveniet!</p>
-				                </div>
-				            </div>
+									<p>Es un material plástico flexible y transparente usado comúnmente para embalar artículos frágiles</p>
+				        </div>
+                <div class="faded">
+                  <button class="btn btn-start-order" onclick="btnDetails('burbuja')" type="button" name="button">Más</button>
+                </div>
+				      </div>
 						</div>
 					</div>
 				</div>
@@ -265,6 +273,32 @@
         </div>
       </div>
     </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="detallesProducto" tabindex="-1" role="dialog" aria-labelledby="detallesProducto" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalTitulo"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <section id="" class="row text-center">
+              <img id="modalImg" src="" width="295.5" height="400" alt="">
+            </section>
+            <section id="modalContenido" class="row text-center">
+
+            </section>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
   <script src="../js/jquery.min.js"></script>
   <script src="../js/jquery-migrate-3.0.1.min.js"></script>
   <script src="../js/popper.min.js"></script>
@@ -280,6 +314,7 @@
  <!--  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="../js/google-map.js"></script> -->
   <script src="../js/main.js"></script>
+  <script src="../js/detallesProducto.js" charset="utf-8"></script>
 
   </body>
 </html>
