@@ -47,7 +47,7 @@ function btnDetails(value){
   switch (value) {
     case 'bnegra':
       titulo = 'Bolsa Negra';
-      srcImg = "../images/Productos/bolsanegra.png";
+      srcImg = "../images/Productos/bolsanegra/bolsanegra.jpg";
       for (var prod in listaProductos.bnegra) {
         contenido += "<tr>"+
                       "<td>"+(1+ parseInt(prod))+"</td>"+
@@ -57,7 +57,7 @@ function btnDetails(value){
     break;
     case 'burbuja':
       titulo = "Burbuja";
-      srcImg = "../images/Productos/burbuja.jpg";
+      srcImg = "../images/Productos/burbuja/burbuja.jpg";
       for (var prod in listaProductos.burbuja) {
         contenido += "<tr>"+
                       "<td>"+(1+ parseInt(prod))+"</td>"+
@@ -66,7 +66,7 @@ function btnDetails(value){
       break;
     case "camiseta":
       titulo = 'Camisteta';
-      srcImg = "../images/Productos/camiseta.jpg";
+      srcImg = "../images/Productos/camiseta/camiseta.jpg";
       var completeTable = "";
       for (var prodT in listaProductos.camiseta) {
         contenido = "<h5>"+prodT+"</h5><table class='table table-bordered'><tbody><thead><tr><th>#</th><th>Descripción</th><tr></thead>";
@@ -82,7 +82,7 @@ function btnDetails(value){
       break;
     case "aluminio":
       titulo = "Aluminio y Egapack";
-      srcImg = "../images/Productos/egapack.webp";
+      srcImg = "../images/Productos/aluminio/aluminioegapack.png";
       for (var prod in listaProductos.aluminio) {
         contenido += "<tr>"+
                       "<td>"+(1+ parseInt(prod))+"</td>"+
@@ -91,7 +91,7 @@ function btnDetails(value){
       break;
     case "desechable":
         titulo: "Vasos, Tapas, Platos y más";
-        srcImg = "../images/Productos/otros-productos.jpg";
+        srcImg = "../images/Productos/desechables/desechable.png";
         var completeTable = "";
         for (var prodT in listaProductos.desechable) {
           contenido = "<h5>"+prodT+"</h5><table class='table table-bordered'><tbody><thead><tr><th>#</th><th>Descripción</th><tr></thead>";
@@ -107,7 +107,7 @@ function btnDetails(value){
       break;
     case "vinil":
       titulo = "Vinil";
-      srcImg = "";
+      srcImg = "../images/Productos/vinil/vinil.jpg";
       for (var prod in listaProductos.vinil) {
         contenido += "<tr>"+
                       "<td>"+(1+ parseInt(prod))+"</td>"+
@@ -116,7 +116,7 @@ function btnDetails(value){
       break;
     case "materia":
       titulo = "Materia Prima";
-      srcImg = "";
+      srcImg = "../images/Productos/materias/materiasprima.png";
       for (var prod in listaProductos.materia) {
         contenido += "<tr>"+
                       "<td>"+(1+ parseInt(prod))+"</td>"+
@@ -125,7 +125,7 @@ function btnDetails(value){
       break;
     case "polvo":
       titulo = "Cubre Polvo";
-      srcImg = "";
+      srcImg = "../images/Productos/cubrepolvo/cubrepolvo.png";
       for (var prod in listaProductos.polvo) {
         contenido += "<tr>"+
                       "<td>"+(1+ parseInt(prod))+"</td>"+
@@ -134,7 +134,7 @@ function btnDetails(value){
       break;
     case "tubular":
       titulo = "Rollo tubular";
-      srcImg = "";
+      srcImg = "../images/Productos/rollotubular/rollotubular.jpg";
       for (var prod in listaProductos.tubular) {
         contenido += "<tr>"+
                       "<td>"+(1+ parseInt(prod))+"</td>"+
@@ -143,7 +143,7 @@ function btnDetails(value){
       break;
     case "poly":
       titulo = "Polystrech";
-      srcImg = "";
+      srcImg = "../images/Productos/polystrech/polystrech.jpg";
       for (var prod in listaProductos.poly) {
         contenido += "<tr>"+
                       "<td>"+(1+ parseInt(prod))+"</td>"+
@@ -152,7 +152,7 @@ function btnDetails(value){
       break;
     case "lazo":
       titulo: "Lazo , Rafia";
-      srcImg = "";
+      srcImg = "../images/Productos/lazos/lazosrafia.png";
       var completeTable = "";
       for (var prodT in listaProductos.lazo) {
         contenido = "<h5>"+prodT+"</h5><table class='table table-bordered'><tbody><thead><tr><th>#</th><th>Descripción</th><tr></thead>";
@@ -168,7 +168,7 @@ function btnDetails(value){
       break;
     case "fleje":
       titulo: "Fleje, Grapa, Cinta";
-      srcImg = "";
+      srcImg = "../images/Productos/cintasflejes/flejegrapasycintas.png";
       var completeTable = "";
       for (var prodT in listaProductos.fleje) {
         contenido = "<h5>"+prodT+"</h5><table class='table table-bordered'><tbody><thead><tr><th>#</th><th>Descripción</th><tr></thead>";
@@ -184,7 +184,7 @@ function btnDetails(value){
       break;
     case "suelta":
       titulo: "Bolsa Suelta";
-      srcImg = "../images/Productos/suelta3.jpeg";
+      srcImg = "../images/Productos/bolsasuelta/bolsasuelta.png";
       var completeTable = "";
       for (var prodT in listaProductos.suelta) {
         contenido = "<h5>"+prodT+"</h5><table class='table table-bordered'><tbody><thead><tr><th>#</th><th>Descripción</th><tr></thead>";
@@ -200,7 +200,7 @@ function btnDetails(value){
       break;
     case "rolloazteca":
       titulo = "Bolsa en rollo Azteca";
-      srcImg = "";
+      srcImg = "../images/Productos/rolloazteca/bolsaazteca.jpg";
       for (var prod in listaProductos.rolloazteca) {
         contenido += "<tr>"+
                       "<td>"+(1+ parseInt(prod))+"</td>"+
@@ -209,7 +209,7 @@ function btnDetails(value){
       break;
     case "rollo":
       titulo = "Bolsa en rollo";
-      srcImg = "";
+      srcImg = "../images/Productos/bolsarollo/bolsarollo.jpg";
       for (var prod in listaProductos.rollo) {
         contenido += "<tr>"+
                       "<td>"+(1+ parseInt(prod))+"</td>"+
@@ -218,7 +218,7 @@ function btnDetails(value){
       break;
     case "guante":
       titulo = "Guante de plástico";
-      srcImg = "";
+      srcImg = "../images/Productos/guantes/guante.jpg";
       for (var prod in listaProductos.guante) {
         contenido += "<tr>"+
                       "<td>"+(1+ parseInt(prod))+"</td>"+
@@ -227,7 +227,7 @@ function btnDetails(value){
       break;
     case "hoja":
       titulo = "Hoja de plástico";
-      srcImg = "";
+      srcImg = "../images/Productos/hojasplastico/hojaplastico.jpg";
       for (var prod in listaProductos.hoja) {
         contenido += "<tr>"+
                       "<td>"+(1+ parseInt(prod))+"</td>"+
