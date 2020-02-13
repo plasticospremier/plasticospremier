@@ -184,7 +184,7 @@ function btnDetails(value){
       break;
     case "suelta":
       titulo: "Bolsa Suelta";
-      srcImg = "";
+      srcImg = "../images/Productos/suelta3.jpeg";
       var completeTable = "";
       for (var prodT in listaProductos.suelta) {
         contenido = "<h5>"+prodT+"</h5><table class='table table-bordered'><tbody><thead><tr><th>#</th><th>Descripción</th><tr></thead>";
