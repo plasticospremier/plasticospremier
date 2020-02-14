@@ -66,7 +66,7 @@ function btnDetails(value){
       break;
     case "camiseta":
       titulo = 'Camisteta';
-      srcImg = "../images/Productos/camiseta/camiseta.jpg";
+      srcImg = "../images/Productos/camiseta/camiseta.png";
       var completeTable = "";
       for (var prodT in listaProductos.camiseta) {
         contenido = "<h5>"+prodT+"</h5><table class='table table-bordered'><tbody><thead><tr><th>#</th><th>Descripción</th><tr></thead>";
@@ -125,7 +125,7 @@ function btnDetails(value){
       break;
     case "polvo":
       titulo = "Cubre Polvo";
-      srcImg = "../images/Productos/cubrepolvo/cubrepolvo.png";
+      srcImg = "../images/Productos/cubrepolvo/cubrepolvo.jpg";
       for (var prod in listaProductos.polvo) {
         contenido += "<tr>"+
                       "<td>"+(1+ parseInt(prod))+"</td>"+
@@ -218,7 +218,7 @@ function btnDetails(value){
       break;
     case "guante":
       titulo = "Guante de plástico";
-      srcImg = "../images/Productos/guantes/guante.jpg";
+      srcImg = "../images/Productos/guantes/guante.png";
       for (var prod in listaProductos.guante) {
         contenido += "<tr>"+
                       "<td>"+(1+ parseInt(prod))+"</td>"+
