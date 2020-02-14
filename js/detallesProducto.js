@@ -3,6 +3,7 @@ function btnDetails(value){
   var srcImg = "";
   var listaProductos = {
     bnegra : ["B NEG 100*160","B NEG 40*60","B NEG 50*70","B NEG 60*90","B NEG 80*120","B NEG 90*120"],
+    compostable : ["B NEG 100*160","B NEG 40*60","B NEG 50*70","B NEG 60*90","B NEG 80*120","B NEG 90*120"],
     burbuja : ["Burbuja pz","Burbuja mts"],
     aluminio : ["AL 10 ALUMAR CJ/24","AL 100 ALUMAR CJ/25","AL 400  ALUMAR CJ/6","AL 50 ALUMAR CJ/25","EGA 30  CJ/50","EGA 600 CJ/6","EGA100  CJ/28"],
     vinil: ["VINIL INV 10 KS","VINIL INV 2/3 KGS","VINIL INV 4 KGS","VINIL INV 8 KGS"],
@@ -233,6 +234,15 @@ function btnDetails(value){
                       "<td>"+(1+ parseInt(prod))+"</td>"+
                       "<td>"+listaProductos.hoja[prod]+"</td>";
       }
+      break;
+    case "compostable":
+    titulo = 'Bolsa Negra biodegradable y compostable';
+    srcImg = "../images/Productos/negrabiodegradable/bolsanegrabio.png";
+    for (var prod in listaProductos.compostable) {
+      contenido += "<tr>"+
+                    "<td>"+(1+ parseInt(prod))+"</td>"+
+                    "<td>"+listaProductos.compostable[prod]+"</td>";
+    }
       break;
     default:
 
